@@ -1,5 +1,7 @@
 require 'rails_helper'
-
+#I have passed these tests, but they made them so that in the beginning,
+# I was required to use the 'password' attr
+# Later, when passing the usercontroller specs, i must use, has_secure_password. 
 RSpec.describe SessionsController, type: :controller do
   
   before do
@@ -25,3 +27,4 @@ RSpec.describe SessionsController, type: :controller do
     end
   end
 end
+

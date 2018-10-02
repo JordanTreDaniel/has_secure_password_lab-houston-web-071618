@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  get '/', to: 'users#welcome', as: 'welcome'
+  get 'users/create'
+
+  get 'users/new'
+
+  get 'sessions/new'
+
+  post 'sessions/create'
+
+  post 'sessions/destroy'
+
+  get '/', to: 'users#welcome'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
